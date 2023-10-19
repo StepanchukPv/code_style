@@ -38,18 +38,18 @@
 
     Example of index.dart
     ```dart
-    export 'opacity_card.dart'
-    export 'custom_section.dart'
-    export 'slidable_action.dart'
+    export 'opacity_card.dart';
+    export 'custom_section.dart';
+    export 'slidable_action.dart';
     ```
 
      #### BAD:
     ```dart
-    import package:flutter/material.dart.
+    import 'package:flutter/material.dart';
 
-    import 'widgets/opacity_card.dart'
-    import 'widgets/custom_section.dart'
-    import 'widgets/slidable_action.dart'
+    import 'widgets/opacity_card.dart';
+    import 'widgets/custom_section.dart';
+    import 'widgets/slidable_action.dart';
 
     //Some other imports
 
@@ -57,9 +57,9 @@
 
     #### GOOD:
     ```dart
-    import package:flutter/material.dart.
+    import 'package:flutter/material.dart';
 
-    import 'widgets/index.dart'
+    import 'widgets/index.dart';
     // Some other imports
     
     ```
@@ -78,5 +78,5 @@
 
     #### GOOD:
     ```dart
-   import 'package:project/widgets/helpers/extensions.dart';
+    import 'package:project/widgets/helpers/extensions.dart';
     ```
